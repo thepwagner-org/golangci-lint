@@ -1,0 +1,15 @@
+name: Build
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: write 
+  actions: write
+  pull-requests: write
+
+jobs:
+  build:
+    uses: thepwagner-org/actions/.github/workflows/build.yaml@b7550187b35a45c5774d6f691d4cb0cdc62052cf # tag=v1.0.4
+    secrets:
+      not_github_token: ${{secrets.WAPWAGNER_TOKEN}}
