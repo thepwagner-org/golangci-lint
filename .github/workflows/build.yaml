@@ -10,6 +10,6 @@ permissions:
 
 jobs:
   build:
-    uses: thepwagner-org/actions/.github/workflows/build.yaml@4205107d9049b7946fb0276c564a35afb9804d81 # tag=v1.0.6
+    uses: thepwagner-org/actions/.github/workflows/build.yaml@9e562e3e6a29fafcfd3e0ad1c21e3db9146fde48 # tag=v1.0.8
     secrets:
       not_github_token: ${{secrets.WAPWAGNER_TOKEN}}
