@@ -1,0 +1,15 @@
+name: Publish
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  publish:
+    uses: thepwagner-org/actions/.github/workflows/publish.yaml@54dba263b1f97ca7a03f0a2e8bf9f5cb42caf684 # tag=v1.0.10
+    secrets:
+      token: ${{secrets.WAPWAGNER_TOKEN}}
