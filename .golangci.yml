@@ -1,0 +1,15 @@
+linters:
+  enable:
+    - errorlint
+    - revive
+    - thelper
+    - unconvert
+    - whitespace
+
+  disable:
+    # disable 1.18 issues - https://github.com/golangci/golangci-lint/issues/2649
+    - bodyclose
+    - gosimple
+    - staticcheck
+    - structcheck
+    - unused
