@@ -10,6 +10,6 @@ permissions:
 
 jobs:
   publish:
-    uses: thepwagner-org/actions/.github/workflows/publish.yaml@54dba263b1f97ca7a03f0a2e8bf9f5cb42caf684 # tag=v1.0.10
+    uses: thepwagner-org/actions/.github/workflows/publish.yaml@53b35848abf0fbd06d00211b3444d9f222df22c5 # tag=v1.0.11
     secrets:
       token: ${{secrets.WAPWAGNER_TOKEN}}
