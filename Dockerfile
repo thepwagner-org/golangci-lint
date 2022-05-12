@@ -1,4 +1,4 @@
-FROM golangci/golangci-lint:v1.46.0-alpine@sha256:a9be740033fde5c19fdb2e9be5ae72b3d5742647606d29bb1c9f6bbcad075646
+FROM golangci/golangci-lint:v1.46.1-alpine@sha256:a8ad0a8859722a323e1c55d079444b5e26d0b94b37ce5217f22860b2b913aa81
 
 RUN addgroup -g 1000 golangci && \
     adduser -D -u 1000 -G golangci golangci
