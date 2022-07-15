@@ -4,12 +4,14 @@ on:
     types: [opened, reopened, synchronize]
 
 permissions:
-  contents: write 
-  actions: write
+  contents: read
+  packages: write
   pull-requests: write
+  id-token: write
 
 jobs:
   build:
-    uses: thepwagner-org/actions/.github/workflows/build.yaml@3d2e2bbbfb76e15d51348dae21130662658d5e36 # tag=v1.0.12
+    uses: thepwagner-org/actions/.github/workflows/build.yaml@9dabd0167c407847daf71746b9ba09a3bedcb357 # tag=v2.0.1
     secrets:
-      not_github_token: ${{secrets.WAPWAGNER_TOKEN}}
+      token: ${{secrets.GITHUB_TOKEN}}
+
