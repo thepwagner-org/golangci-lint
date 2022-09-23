@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   publish:
-    uses: thepwagner-org/actions/.github/workflows/publish.yaml@df0899789d1ad7712662c5942830dd910407dd0b # tag=v2.1.2
+    uses: thepwagner-org/actions/.github/workflows/publish.yaml@071a5d53da8088d5a434758df6c400c017ffec97 # tag=v2.2.1
     secrets:
       token: ${{secrets.GITHUB_TOKEN}}
 
