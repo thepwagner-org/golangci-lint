@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   build:
-    uses: thepwagner-org/actions/.github/workflows/build.yaml@76c5ce4b7042976774cb7b94688a67a3eadef6ee # v2.4.1
+    uses: thepwagner-org/actions/.github/workflows/build.yaml@0e6e8ce011a25c89ec44457b1fddaf9fd34a525f # v2.6.0
     secrets:
       token: ${{secrets.GITHUB_TOKEN}}
 
