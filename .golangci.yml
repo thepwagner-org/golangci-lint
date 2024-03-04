@@ -6,7 +6,7 @@ linters:
     - gosimple
     - govet
     - ineffassign
-    - paralleltest
+    # - paralleltest
     - revive
     - staticcheck
     - thelper
